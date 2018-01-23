@@ -1,6 +1,7 @@
 == gTerminal project
 
 Game terminal is a maven project to practice skills in:
+
 * Maven
 * Java swing
 * Graphics2D
