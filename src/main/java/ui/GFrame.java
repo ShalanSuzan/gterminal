@@ -24,6 +24,7 @@ public class GFrame extends JFrame {
     private void init() {
         //Custom the frame
         setDefaultLookAndFeelDecorated(true);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         setPreferredSize(new Dimension(350, 250));
         setLocationRelativeTo(null);
         setLayout(new GridBagLayout());
@@ -48,12 +49,12 @@ public class GFrame extends JFrame {
 
         //add action listeners
         greenBtn.addActionListener(event -> {
-            log.debug("The {} button is been selected.", greenBtn.getName());
+            log.debug(String.format("The %s button is been selected.", greenBtn.getName()));
             changeColorTo(GColor.GREEN);
         });
 
         redBtn.addActionListener(actionEvent -> {
-            log.debug("The {} button is been selected.", redBtn.getName());
+            log.debug(String.format("The %s button is been selected.", redBtn.getName()));
             changeColorTo(GColor.RED);
         });
 
@@ -80,11 +81,11 @@ public class GFrame extends JFrame {
                 changeColorTo(GColor.RED);
                 break;
             default:
-                log.warn("Undefined color. Found {}.", colorsStr);
+                log.warn(String.format("Undefined color. Found %s.", colorsStr));
                 changeColorTo(GColor.BLUE);
                 break;
         }
-        log.debug("{} color is selected via {} comboBox.", colorsStr, comboBox.getName());
+        log.debug(String.format("%s color is selected via %s comboBox.", colorsStr, comboBox.getName()));
     }
 
     private void changeColorTo(GColor color) {

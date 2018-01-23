@@ -22,7 +22,7 @@ public class GPanel extends JPanel {
     @Override
     public void paint(Graphics g){
         paintComponent(g);
-        log.debug("Repaint the graph. The current color is {}.", gColor.name());
+        log.debug(String.format("Repaint the graph. The current color is %s.", gColor.name()));
     }
 
     @Override

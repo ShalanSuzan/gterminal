@@ -1,0 +1,17 @@
+== gTerminal project
+
+Game terminal is a maven project to practice skills in:
+* Maven
+* Java swing
+* Graphics2D
+* Log4j
+* Asciidoc
+
+=== How to run gTerminal?
+Execute the following RunGTerminal bash script under the project path.
++
+[source,python]
+----------------
+./RunGTerminal
+----------------
+
