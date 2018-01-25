@@ -2,7 +2,6 @@ package ui;
 
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
