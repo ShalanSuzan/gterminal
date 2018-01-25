@@ -6,6 +6,7 @@ Game terminal is a maven project to practice skills in:
 * Java swing
 * Graphics2D
 * Log4j
+* Lombok
 * Asciidoc
 
 === How to run gTerminal?
